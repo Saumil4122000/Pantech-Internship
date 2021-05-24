@@ -1,13 +1,13 @@
 import cv2
 import os
-dataset="C:/Users/BAPS/OneDrive/Desktop/PanTech/Lec-5/Dataset"
+dataset="Lec-5\Dataset"
 name="champ"
 path=os.path.join(dataset,name)
 
 if not os.path.isdir(path):
     os.mkdir(path)
 (width,height)=(130,100)
-alg="C:/Users/BAPS/OneDrive/Desktop/PanTech/Lec-5/haarcascade_frontalface_default.xml"
+alg="Lec-5\haarcascade_frontalface_default.xml"
 haar_cascade= cv2.CascadeClassifier(alg)         
 cam=cv2.VideoCapture(0) 
 count=1                                                                                            
