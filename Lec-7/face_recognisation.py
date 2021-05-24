@@ -2,6 +2,7 @@ import cv2,numpy,os
 # i have used numpy for computation of matrix from one point of our face
 haar_file='Lec-7\haarcascade_frontalface_default.xml'
 face_cascade=cv2.CascadeClassifier(haar_file)
+
 datasets='Lec-7\dataset'
 id=0
 (images,labels,names)=([],[],{})
